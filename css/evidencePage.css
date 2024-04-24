@@ -1,0 +1,1862 @@
+/*Configuración del body*/
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #EAE0D5;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* |Diseño para monitor| Resolución para pantallas de 1025px en adelante*/
+@media screen and (min-width: 1025px){
+    .PageContainer{
+        width: 960px;
+        margin: 0px auto;
+        overflow: auto;
+        background-color: #FEFEE3;
+    }
+
+    /*Sección de la barra top*/
+    .TopBar{
+        width: 100%;
+        height: 50px;
+        float: left;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #LeftContent{
+        display: flex;
+        align-items: center;
+    }
+
+    .LogoImg{
+        width: 150px;
+        height: 50px;
+    }
+
+    #RightContent{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #RightContent a:hover{
+        opacity: 0.7;
+    }
+
+    .LoginButton{
+        padding: 3px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #22333B;
+        border-radius: 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        background-color: #FEFEE3;
+    }
+
+    .LoginButton span{
+        color: #22333B;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 13pt;
+        user-select: none;
+    }
+
+    .SignUpButton{
+        padding: 3px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #22333B;
+        border-radius: 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        background-color: #22333B;
+    }
+
+    .SignUpButton span{
+        color: #FEFEE3;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 13pt;
+        user-select: none;
+    }
+
+    /*Sección de la imagen del encabezado*/
+    .HeaderImg{
+        width: 100%;
+        height: 281px;
+        float: left;
+    }
+
+    .HeaderImg img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Sección del menu*/
+    .MenuMobile{
+        display: none;
+    }
+
+    .Menu{
+        width: 100%;
+        height: 50px;
+        float: left;
+        overflow: auto;
+        background-color: #22333B;
+    }
+
+    .Menu a{
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .HomeButton{
+        width: 60px;
+    }
+
+    .HomeButton i{
+        color: #FEFEE3;
+    }
+
+    .MenuButton{
+        width: 225px;
+    }
+
+    .MenuButton span{
+        color: #FEFEE3;
+        font-family: cursive;
+        font-size: 13.5pt;
+        user-select: none;
+    }
+
+    /*Sección del contenido*/
+    .ContentContainer{
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 15px 0px;
+        background-color: #5E503F;
+    }
+
+    /*Sección del contenido - Contenido principal*/
+    #PrincipalContent{
+        width: 615px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .EvidenceName{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        color: #FEFEE3;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .EvidenceName .Name{
+        width: 100%;
+        text-align: left;
+    }
+
+    .Name span{
+        font-size: 18pt;
+        font-weight: bold;
+    }
+
+    .EvidenceName .UserName{
+        width: 100%;
+        text-align: right;
+        font-style: italic;
+    }
+
+    .UserName a span{
+        color: #FEFEE3;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16pt;
+        text-decoration: underline;
+    }
+
+    .UserName a:hover span{
+        text-decoration: none;
+        color: #FFFFFF;
+        cursor: hand;
+    }
+
+    .PrincipalImage{
+        width: 85%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .PrincipalImage img{
+        width: 85%;
+        height: 100%;
+        border-radius: 3px;
+    }
+
+    .EvidenceDescription{
+        width: 90%;
+        text-align: justify;
+    }
+
+    .EvidenceDescription p{
+        margin: 0px;
+        padding: 0px;
+        color: #FFFFFF;
+        font-size: 13pt;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .EvidenceResources{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .EvidenceSection{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .SectionTitle{
+        width: 100%;
+        text-align: left;
+        border-bottom: 3px solid #EAE0D5;
+    }
+
+    .SectionTitle span{
+        color: #FEFEE3;
+        font-size: 15pt;
+        font-weight: bold;
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .ImageResources{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ImageResources img{
+        width: 20%;
+        height: 100%;
+        border-radius: 3px;
+    }
+
+    .VideoResources{
+        width: 100%;
+        height: 125px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .VideoResources video{
+        width: 35%;
+        height: 100%;
+        border-radius: 3px;
+    }
+
+    .AudioResources{
+        width: 100%;
+        height: 55px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .AudioResources audio{
+        width: 40%;
+        height: 100%;
+        border-radius: 3px;
+    }
+
+    .LinkResources{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .LinkResources a{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        border-radius: 3px;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .LinkResources a:hover{
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .LinkResources a i{
+        color: #FEFEE3;
+        font-size: 20px;
+    }
+
+    .LinkResources a span{
+        color: #FFFFFF;
+        font-size: 14pt;
+        font-family: system-ui, sans-serif;
+    }
+
+    .EvidenceFooter{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .MostInterestingButton{
+        width: 40%;
+        padding: 5px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        border-radius: 3px;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .MostInterestingButton:hover{
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 1);
+        cursor: hand;
+    }
+
+    .MostInterestingButton i{
+        font-size: 20px;
+    }
+
+    .MostInterestingButton span{
+        color: #22333B;
+        font-size: 16pt;
+        font-family: system-ui, sans-serif;
+    }
+
+    .ContactInformation{
+        width: 40%;
+        padding: 5px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        border-radius: 3px;
+        border: 3px inset #22333B;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .ContactInformation span{
+        color: #FFFFFF;
+        font-size: 13pt;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+    }
+
+    /*Sección del contenido - Contenido barra lateral*/
+    #SideBarContent{
+        width: 295px;
+        height: 765px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .SearchBar{
+        width: 100%;
+        height: 40px;
+        overflow: auto;
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        border-radius: 3px;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .SearchBar input{
+        width: 80%;
+        height: 100%;
+        float: left;
+        margin: 0px;
+        padding: 0px 0px 0px 5px;
+        border: 0px;
+        color: #FEFEE3;
+        font-size: 12pt;
+        font-family: 'Poppins', sans-serif;
+        background-color: transparent;
+    }
+
+    ::placeholder{
+        color: #FEFEE3;
+    }
+
+    .SearchBar button{
+        width: 20%;
+        height: 100%;
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        background-color: #EAE0D5;
+        cursor: hand;
+    }
+
+    .WebSiteDescription{
+        width: 100%;
+        height: 275px;
+    }
+
+    .DescriptionTitle{
+        width: 100%;
+        height: 24px;
+        border-bottom: 1px dashed #FFFFFF;
+    }
+
+    .DescriptionTitle span{
+        color: #FFFFFF;
+        font-size: 15pt;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    .DescriptionIcon{
+        width: 100%;
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .DescriptionIcon i{
+        color: #FEFEE3;
+        font-size: 100px;
+    }
+
+    .Description{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        align-items: center;
+    }
+
+    .Description p{
+        color: #FFFFFF;
+        font-size: 12pt;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+    }
+
+    .Description span{
+        color: #FEFEE3;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    .CommentsContainer{
+        width: 100%;
+        height: 420px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #C6AC8F;
+    }
+
+    .CommentsTitle{
+        width: 97%;
+        text-align: center;
+        border-radius: 3px;
+        background-color: #FEFEE3;
+    }
+
+    .CommentsTitle span{
+        color: #22333B;
+        font-weight: bold;
+        font-size: 17pt;
+        font-family: system-ui, sans-serif;
+        user-select: none;
+    }
+
+    .Comments{
+        width: 97%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .Comment{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Comment a{
+        width: 15%;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEFEE3;
+    }
+
+    .Comment a img{
+        width: 70%;
+        height: 65%;
+    }
+
+    .Comment div{
+        width: 84%;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEFEE3;
+    }
+
+    .Comment div span{
+        color: #22333B;
+        font-size: 10pt;
+        font-family: system-ui, sans-serif;
+        user-select: none;
+    }
+
+    .CommentsSubmit{
+        width: 97%;
+        height: 50px;
+        margin: 0px;
+        border-radius: 3px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .CommentUserIcon{
+        width: 20%;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEFEE3;
+    }
+
+    .CommentUserIcon img{
+        width: 80%;
+        height: 75%;
+    }
+
+    .CommentInput{
+        width: 79%;
+        margin: 0px;
+        overflow: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .CommentInput input{
+        width: 80%;
+        height: 80%;
+        border-radius: 3px;
+        -webkit-border-radius: 3px 0px 0px 3px;
+        margin: 0px;
+        padding: 0px 0px 0px 5px;
+        border: 0px;
+        float: left;
+        color: #22333B;
+        font-size: 10pt;
+        font-family: 'Poppins', sans-serif;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .CommentInput input::placeholder{color: #22333B;}
+
+    .CommentInput button{
+        width: 20%;
+        height: 80%;
+        border-radius: 3px;
+        -webkit-border-radius: 0px 3px 3px 0px;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        float: left;
+        cursor: hand;
+        background-color: #EAE0D5 0.5;
+    }
+    
+    /*Sección del pie*/
+    .Footer{
+        width: 100%;
+        float: left;
+        overflow: auto;
+    }
+
+    .Footer div{
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #FooterUp{
+        height: 50px;
+        background-color: #C6AC8F;
+    }
+
+    #FooterUp span{
+        color: #0A0908;
+        font-size: 12pt;
+        font-family: cursive;
+    }
+
+    #FooterUp a{
+        text-decoration: underline #0A0908;
+    }
+
+    #FooterUp a:hover{text-decoration: none;}
+
+    #FooterDown{
+        height: 40px;
+        background-color: #EAE0D5;
+    }
+
+    #FooterDown a:hover{
+        text-decoration: underline;
+        text-decoration-color: #000000;
+    }
+
+    #FooterDown span{
+        color: #0A0908;
+        font-size: 11pt;
+        font-family: cursive;
+    }
+}
+
+/*/////////////////////////////////////////////////////////
+ |Tableta| Estilos para pantallas entre 681px y 1024*/
+@media screen and (min-width: 681px) and (max-width: 1024px){
+    .PageContainer{
+        width: 700px;
+        margin: 0px auto;
+        overflow: auto;
+        background-color: #FEFEE3;
+    }
+
+    /*Sección de la barra top*/
+    .TopBar{
+        width: 100%;
+        height: 50px;
+        float: left;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #LeftContent{
+        display: flex;
+        align-items: center;
+    }
+
+    .LogoImg{
+        width: 125px;
+        height: 50px;
+    }
+
+    #RightContent{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #RightContent a:hover{
+        opacity: 0.7;
+    }
+
+    .LoginButton{
+        padding: 3px 5px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #22333B;
+        border-radius: 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        background-color: #FEFEE3;
+    }
+
+    .LoginButton span{
+        color: #22333B;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 11pt;
+    }
+
+    .SignUpButton{
+        padding: 3px 5px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #22333B;
+        border-radius: 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        background-color: #22333B;
+    }
+
+    .SignUpButton span{
+        color: #FEFEE3;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 11pt;
+    }
+
+    /*Sección de la imagen del encabezado*/
+    .HeaderImg{
+        width: 100%;
+        height: 205px;
+        float: left;
+    }
+
+    .HeaderImg img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Sección del menu*/
+    .MenuMobile{
+        display: none;
+    }
+
+    .Menu{
+        width: 100%;
+        height: 50px;
+        float: left;
+        overflow: auto;
+        background-color: #22333B;
+    }
+
+    .Menu a{
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .HomeButton{
+        width: 52px;
+    }
+
+    .HomeButton i{
+        color: #FEFEE3;
+    }
+
+    .MenuButton{
+        width: 162px;
+    }
+
+    .MenuButton span{
+        color: #FEFEE3;
+        font-family: cursive;
+        font-size: 10pt;
+    }
+
+    /*Sección del contenido*/
+    .ContentContainer{
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px 0px;
+        background-color: #5E503F;
+    }
+
+    /*Sección del contenido - Contenido principal*/
+    #PrincipalContent{
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .EvidenceName{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        color: #FEFEE3;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .EvidenceName .Name{
+        width: 100%;
+        text-align: left;
+    }
+
+    .Name span{
+        font-size: 17pt;
+        font-weight: bold;
+    }
+
+    .EvidenceName .UserName{
+        width: 100%;
+        text-align: right;
+        font-style: italic;
+    }
+
+    .UserName a span{
+        color: #FEFEE3;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15pt;
+        text-decoration: underline;
+    }
+
+    .UserName a:hover span{
+        text-decoration: none;
+        color: #FFFFFF;
+        cursor: hand;
+    }
+
+    .PrincipalImage{
+        width: 85%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .PrincipalImage img{
+        width: 85%;
+        height: 100%;
+        border-radius: 3px;
+    }
+
+    .EvidenceDescription{
+        width: 90%;
+        text-align: justify;
+    }
+
+    .EvidenceDescription p{
+        margin: 0px;
+        padding: 0px;
+        color: #FFFFFF;
+        font-size: 12pt;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .EvidenceResources{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .EvidenceSection{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .SectionTitle{
+        width: 100%;
+        text-align: left;
+        border-bottom: 3px solid #EAE0D5;
+    }
+
+    .SectionTitle span{
+        color: #FEFEE3;
+        font-size: 15pt;
+        font-weight: bold;
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .ImageResources{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ImageResources img{
+        width: 20%;
+        height: 100%;
+        border-radius: 3px;
+    }
+
+    .VideoResources{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .VideoResources video{
+        width: 35%;
+        height: 100%;
+        border-radius: 3px;
+    }
+
+    .AudioResources{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .AudioResources audio{
+        width: 40%;
+        height: 100%;
+        border-radius: 3px;
+    }
+
+    .LinkResources{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .LinkResources a{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        border-radius: 3px;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .LinkResources a:hover{
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .LinkResources a i{
+        color: #FEFEE3;
+        font-size: 20px;
+    }
+
+    .LinkResources a span{
+        color: #FFFFFF;
+        font-size: 14pt;
+        font-family: system-ui, sans-serif;
+    }
+
+    .EvidenceFooter{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .MostInterestingButton{
+        width: 40%;
+        padding: 5px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        border-radius: 3px;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .MostInterestingButton:hover{
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 1);
+        cursor: hand;
+    }
+
+    .MostInterestingButton i{
+        font-size: 18px;
+    }
+
+    .MostInterestingButton span{
+        color: #22333B;
+        font-size: 12pt;
+        font-family: system-ui, sans-serif;
+    }
+
+    .ContactInformation{
+        width: 40%;
+        padding: 5px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        border-radius: 3px;
+        border: 3px inset #22333B;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .ContactInformation span{
+        color: #FFFFFF;
+        font-size: 12pt;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+    }
+
+    /*Sección del contenido - Contenido barra lateral*/
+    #SideBarContent{
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .SearchBar{
+        width: 100%;
+        height: 30px;
+        overflow: auto;
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        border-radius: 3px;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .SearchBar input{
+        width: 80%;
+        height: 100%;
+        float: left;
+        margin: 0px;
+        padding: 0px 0px 0px 5px;
+        border: 0px;
+        color: #FEFEE3;
+        font-size: 10pt;
+        font-family: 'Poppins', sans-serif;
+        background-color: transparent;
+    }
+
+    ::placeholder{
+        color: #FEFEE3;
+    }
+
+    .SearchBar button{
+        width: 20%;
+        height: 100%;
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        background-color: #EAE0D5;
+        cursor: hand;
+    }
+
+    .WebSiteDescription{
+        width: 100%;
+    }
+
+    .DescriptionTitle{
+        width: 100%;
+        height: 24px;
+        text-align: center;
+        border-bottom: 1px dashed #FFFFFF;
+    }
+
+    .DescriptionTitle span{
+        color: #FFFFFF;
+        font-size: 14pt;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    .DescriptionIcon{
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .DescriptionIcon i{
+        color: #FEFEE3;
+        font-size: 75px;
+    }
+
+    .Description{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+    }
+
+    .Description p{
+        color: #FFFFFF;
+        font-size: 11pt;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+    }
+
+    .CommentsContainer{
+        width: 100%;
+        height: 420px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #C6AC8F;
+    }
+
+    .CommentsTitle{
+        width: 97%;
+        text-align: center;
+        border-radius: 3px;
+        background-color: #FEFEE3;
+    }
+
+    .CommentsTitle span{
+        color: #22333B;
+        font-weight: bold;
+        font-size: 17pt;
+        font-family: system-ui, sans-serif;
+        user-select: none;
+    }
+
+    .Comments{
+        width: 97%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .Comment{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Comment a{
+        width: 15%;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEFEE3;
+    }
+
+    .Comment a img{
+        width: 65%;
+        height: 60%;
+    }
+
+    .Comment div{
+        width: 84%;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEFEE3;
+    }
+
+    .Comment div span{
+        color: #22333B;
+        font-size: 10pt;
+        font-family: system-ui, sans-serif;
+        user-select: none;
+    }
+
+    .CommentsSubmit{
+        width: 97%;
+        height: 50px;
+        margin: 0px;
+        border-radius: 3px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .CommentUserIcon{
+        width: 20%;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEFEE3;
+    }
+
+    .CommentUserIcon img{
+        width: 80%;
+        height: 75%;
+    }
+
+    .CommentInput{
+        width: 79%;
+        margin: 0px;
+        overflow: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .CommentInput input{
+        width: 80%;
+        height: 80%;
+        border-radius: 3px;
+        -webkit-border-radius: 3px 0px 0px 3px;
+        margin: 0px;
+        padding: 0px 0px 0px 5px;
+        border: 0px;
+        float: left;
+        color: #22333B;
+        font-size: 10pt;
+        font-family: 'Poppins', sans-serif;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .CommentInput input::placeholder{color: #22333B;}
+
+    .CommentInput button{
+        width: 20%;
+        height: 80%;
+        border-radius: 3px;
+        -webkit-border-radius: 0px 3px 3px 0px;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        float: left;
+        cursor: hand;
+        background-color: #EAE0D5 0.5;
+    }
+
+    /*Sección del pie*/
+    .Footer{
+        width: 100%;
+        float: left;
+        overflow: auto;
+    }
+
+    .Footer div{
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #FooterUp{
+        height: 50px;
+        background-color: #C6AC8F;
+    }
+
+    #FooterUp span{
+        color: #0A0908;
+        font-size: 11pt;
+        font-family: cursive;
+    }
+
+    #FooterUp a{
+        text-decoration: underline #0A0908;
+    }
+
+    #FooterUp a:hover{text-decoration: none;}
+
+    #FooterDown{
+        height: 40px;
+        background-color: #EAE0D5;
+    }
+
+    #FooterDown a:hover{
+        text-decoration: underline;
+        text-decoration-color: #000000;
+    }
+
+    #FooterDown span{
+        color: #0A0908;
+        font-size: 10pt;
+        font-family: cursive;
+    }
+}
+
+/*///////////////////////////////////////////////////////
+ |Movil| Estilos para pantallas entre 0px y 680px*/
+@media screen and (min-width: 0px) and (max-width: 680px){
+    .PageContainer{
+        width: 100%;
+        margin: 0px auto;
+        overflow: auto;
+        background-color: #FEFEE3;
+    }
+
+    /*Sección de la barra top*/
+    .TopBar{
+        width: 100%;
+        height: 50px;
+        float: left;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #LeftContent{
+        display: flex;
+        align-items: center;
+    }
+
+    .LogoImg{
+        width: 125px;
+        height: 50px;
+    }
+
+    #RightContent{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #RightContent a:hover{
+        opacity: 0.7;
+    }
+
+    .LoginButton{
+        padding: 3px 5px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #22333B;
+        border-radius: 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        background-color: #FEFEE3;
+    }
+
+    .LoginButton span{
+        color: #22333B;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 11pt;
+    }
+
+    .SignUpButton{
+        padding: 3px 5px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #22333B;
+        border-radius: 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        background-color: #22333B;
+    }
+
+    .SignUpButton span{
+        color: #FEFEE3;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 11pt;
+    }
+
+    /*Sección de la imagen del encabezado*/
+    .HeaderImg{
+        width: 100%;
+        height: 199px;
+        float: left;
+    }
+
+    .HeaderImg img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Sección del menu*/
+    .Menu .MenuButton{
+        display: none;
+    }
+
+    .Menu{
+        width: 100%;
+        height: 50px;
+        float: left;
+        overflow: auto;
+        background-color: #22333B;
+    }
+
+    .HomeButton{
+        width: 10%;
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .HomeButton i{
+        color: #FEFEE3;
+    }
+    
+    .MenuMobile{
+        width: 90%;
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .MenuMobile label{
+        cursor: hand;
+        color: #FEFEE3;
+        margin-right: 20px;
+    }
+
+    #MenuSearchBar{
+        display: none;
+    }
+
+    .M_SearchBar{
+        position: absolute;
+        top: 299px; left: 0; right: 0;
+        margin: 0px;
+        padding: 0px;
+        overflow: auto;
+        display: none;
+    }
+
+    .M_SearchBar input{
+        width: 50%;
+        height: 30px;
+        margin: 0px;
+        padding: 0px 0px 0px 5px;
+        border: 0px;
+        border-left: 1px solid #22333B;
+        border-bottom: 1px solid #22333B;
+        float: right;
+        color: #22333B;
+        font-size: 10pt;
+        font-family: 'Poppins', sans-serif;
+        background-color: #EAE0D5;
+    }
+
+    ::placeholder{
+        color: #22333B;
+    }
+
+    #MenuSearchBar:checked ~ .M_SearchBar{
+        display: initial;
+    }
+
+    #MenuBar{
+        display: none;
+    }
+
+    .Buttons{
+        position: absolute;
+        top: 299px; left: 0; right: 0;
+        overflow: auto;
+        background-color: #EAE0D5;
+        display: none;
+    }
+
+    .Buttons a{
+        width: 100%;
+        height: 29px;
+        border-bottom: 1px solid #FEFEE3;
+        float: left;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .Buttons a i{
+        margin-left: 20px;
+        color: #22333B;
+    }
+
+    .Buttons a span{
+        color: #22333B;
+        font-family: cursive;
+        font-size: 12pt;
+    }
+
+    #MenuBar:checked ~ .Buttons{
+        display: initial;
+    }
+
+    /*Sección del contenido*/
+    .ContentContainer{
+        width: 100%;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 10px 0px;
+        background-color: #5E503F;
+    }
+
+    #PrincipalContent{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .EvidenceName{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        color: #FEFEE3;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .EvidenceName .Name{
+        width: 100%;
+        text-align: left;
+    }
+
+    .Name span{
+        font-size: 17pt;
+        font-weight: bold;
+    }
+
+    .EvidenceName .UserName{
+        width: 100%;
+        text-align: right;
+        font-style: italic;
+    }
+
+    .UserName a span{
+        color: #FEFEE3;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15pt;
+        text-decoration: underline;
+    }
+
+    .UserName a:hover span{
+        text-decoration: none;
+        color: #FFFFFF;
+        cursor: hand;
+    }
+
+    .PrincipalImage{
+        width: 85%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .PrincipalImage img{
+        width: 85%;
+        height: 100%;
+        border-radius: 3px;
+    }
+
+    .EvidenceDescription{
+        width: 90%;
+        text-align: justify;
+    }
+
+    .EvidenceDescription p{
+        margin: 0px;
+        padding: 0px;
+        color: #FFFFFF;
+        font-size: 12pt;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .EvidenceResources{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .EvidenceSection{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .SectionTitle{
+        width: 100%;
+        text-align: left;
+        border-bottom: 3px solid #EAE0D5;
+    }
+
+    .SectionTitle span{
+        color: #FEFEE3;
+        font-size: 15pt;
+        font-weight: bold;
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .ImageResources{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ImageResources img{
+        width: 20%;
+        height: 100%;
+        border-radius: 3px;
+    }
+
+    .VideoResources{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .VideoResources video{
+        width: 35%;
+        height: 100%;
+        border-radius: 3px;
+    }
+
+    .AudioResources{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .AudioResources audio{
+        width: 40%;
+        height: 100%;
+        border-radius: 3px;
+    }
+
+    .LinkResources{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .LinkResources a{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        border-radius: 3px;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .LinkResources a:hover{
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .LinkResources a i{
+        color: #FEFEE3;
+        font-size: 20px;
+    }
+
+    .LinkResources a span{
+        color: #FFFFFF;
+        font-size: 13pt;
+        font-family: system-ui, sans-serif;
+    }
+
+    .EvidenceFooter{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .MostInterestingButton{
+        width: 30%;
+        padding: 5px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        border-radius: 3px;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .MostInterestingButton:hover{
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 1);
+        cursor: hand;
+    }
+
+    .MostInterestingButton i{
+        font-size: 18px;
+    }
+
+    .MostInterestingButton span{
+        color: #22333B;
+        font-size: 12pt;
+        font-family: system-ui, sans-serif;
+    }
+
+    .ContactInformation{
+        width: 40%;
+        padding: 5px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        border-radius: 3px;
+        border: 3px inset #22333B;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .ContactInformation span{
+        color: #FFFFFF;
+        font-size: 12pt;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+    }
+
+    /*Sección del contenido - Contenido barra baja*/
+    #SideBarContent{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .SearchBar{
+        display: none;
+    }
+
+    .WebSiteDescription{
+        width: 100%;
+    }
+
+    .DescriptionTitle{
+        width: 95%;
+        height: 19px;
+        margin: 0px auto;
+        text-align: center;
+        border-bottom: 1px dashed #FFFFFF;
+    }
+
+    .DescriptionTitle span{
+        color: #FFFFFF;
+        font-size: 13pt;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    .DescriptionIcon{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .DescriptionIcon i{
+        color: #FEFEE3;
+        font-size: 75px;
+    }
+
+    .Description{
+        width: 100%;
+        height: 75px;
+        display: flex;
+        align-items: center;
+    }
+
+    .Description p{
+        color: #FFFFFF;
+        font-size: 11pt;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    .CommentsContainer{
+        display: none;
+    }
+
+    /*Sección del pie*/
+    .Footer{
+        width: 100%;
+        float: left;
+        overflow: auto;
+    }
+
+    .Footer div{
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #FooterUp{
+        height: 50px;
+        background-color: #C6AC8F;
+    }
+
+    #FooterUp span{
+        color: #0A0908;
+        font-size: 10.5pt;
+        font-family: cursive;
+    }
+
+    #FooterUp a{
+        text-decoration: underline #0A0908;
+    }
+
+    #FooterUp a:hover{text-decoration: none;}
+
+    #FooterDown{
+        height: 40px;
+        background-color: #EAE0D5;
+    }
+
+    #FooterDown a:hover{
+        text-decoration: underline;
+        text-decoration-color: #000000;
+    }
+
+    #FooterDown span{
+        color: #0A0908;
+        font-size: 9.5pt;
+        font-family: cursive;
+    }
+}

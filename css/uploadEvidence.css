@@ -1,0 +1,1057 @@
+/*Configuración del body*/
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #EAE0D5;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* |Diseño para monitor| Resolución para pantallas de 1025px en adelante*/
+@media screen and (min-width: 1025px){
+    .PageContainer{
+        width: 960px;
+        margin: 0px auto;
+        overflow: auto;
+        background-color: #FEFEE3;
+    }
+
+    /*Sección de la barra top*/
+    .TopBar{
+        width: 100%;
+        height: 50px;
+        float: left;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #LeftContent{
+        display: flex;
+        align-items: center;
+    }
+
+    .LogoImg{
+        width: 150px;
+        height: 50px;
+    }
+
+    #RightContent{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #RightContent a:hover{
+        opacity: 0.7;
+    }
+
+    .LoginButton{
+        padding: 3px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #22333B;
+        border-radius: 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        background-color: #FEFEE3;
+    }
+
+    .LoginButton span{
+        color: #22333B;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 13pt;
+        user-select: none;
+    }
+
+    .SignUpButton{
+        padding: 3px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #22333B;
+        border-radius: 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        background-color: #22333B;
+    }
+
+    .SignUpButton span{
+        color: #FEFEE3;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 13pt;
+        user-select: none;
+    }
+
+    /*Sección de la imagen del encabezado*/
+    .HeaderImg{
+        width: 100%;
+        height: 281px;
+        float: left;
+    }
+
+    .HeaderImg img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Sección del menu*/
+    .MenuMobile{
+        display: none;
+    }
+
+    .Menu{
+        width: 100%;
+        height: 50px;
+        float: left;
+        overflow: auto;
+        background-color: #22333B;
+    }
+
+    .Menu a{
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .HomeButton{
+        width: 60px;
+    }
+
+    .HomeButton i{
+        color: #FEFEE3;
+    }
+
+    .MenuButton{
+        width: 225px;
+    }
+
+    .MenuButton span{
+        color: #FEFEE3;
+        font-family: cursive;
+        font-size: 13.5pt;
+        user-select: none;
+    }
+
+    /*Sección del panel*/
+    .PanelContainer{
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 15px 0px;
+        background-color: #5E503F;
+    }
+
+    /*Sección del panel - Panel principal*/
+    #PrincipalPanel{
+        width: 615px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .OperationPanelTitle{
+        text-align: center;
+        border-bottom: 1px dashed #FFFFFF;
+    }
+
+    .OperationPanelTitle span{
+        color: #FFFFFF;
+        font-size: 25pt;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    .OperationPanel{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .LabelOne{
+        color: #FFFFFF;
+        font-size: 16pt;
+        font-family: system-ui, sans-serif;
+    }
+
+    /*.FormPanel{
+
+    }*/
+
+    .UpdateInfoForm{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .UpdateInfoForm input{
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+    }
+
+    .FormField{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+        border-radius: 5px;
+        border: 1px solid #22333B;
+        background-color: #C6AC8F;
+    }
+
+    .FormField label{
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .FormField label i{
+        color: #FFFFFF;
+        font-size: 18px;
+        text-shadow: 0 0 3px #000000;
+    }
+
+    .FormField label span{
+        padding-left: 5px;
+        color: #FFFFFF;
+        text-shadow: 0 0 5px #22333B;
+        font-size: 13pt;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .FormField input{
+        width: 90%;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        color: #000000;
+        font-size: 13pt;
+        font-family: 'Poppins', sans-serif;
+        background-color: #C6AC8F 0.7;
+    }
+
+    .FormField .RadioInputs{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .FormField .RadioInputs div{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .FormField .RadioInputs input{
+        width: 20%;
+    }
+
+    .FormField .RadioInputs span{
+        width: 80%;
+        padding-left: 5px;
+        color: #0A0908;
+        font-size: 11pt;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .SubmitButton{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .SubmitButton button{
+        width: 50%;
+        border-radius: 3px;
+        padding: 0px;
+        padding: 5px 0px;
+        border: 2px solid #0A0908;
+        background-color: #C6AC8F 0.7;
+    }
+
+    .SubmitButton button span{
+        color: #000000;
+        font-size: 13pt;
+        font-weight: bold;
+    }
+
+    .SubmitButton button:hover{
+        cursor: pointer;
+        background-color: #C6AC8F;
+    }
+    
+    /*Sección del panel - Panel barra lateral*/
+    #SideBarPanel{
+        width: 295px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .PanelMessage{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .TitleMessage{
+        border-bottom: 1px dashed #FFFFFF;
+    }
+
+    .TitleMessage span{
+        color: #FFFFFF;
+        font-size: 13.5pt;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .Message{
+        text-align: center;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: #FEFEE3;
+    }
+
+    .Message span{
+        color: #22333B;
+        font-size: 13.5pt;
+        font-weight: bold;
+        font-family: system-ui, sans-serif;
+    }
+
+    /*Sección del pie*/
+    .Footer{
+        width: 100%;
+        float: left;
+        overflow: auto;
+    }
+
+    .Footer div{
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #FooterUp{
+        height: 50px;
+        background-color: #C6AC8F;
+    }
+
+    #FooterUp span{
+        color: #0A0908;
+        font-size: 12pt;
+        font-family: cursive;
+    }
+
+    #FooterUp a{
+        text-decoration: underline #0A0908;
+    }
+
+    #FooterUp a:hover{text-decoration: none;}
+
+    #FooterDown{
+        height: 40px;
+        background-color: #EAE0D5;
+    }
+
+    #FooterDown a:hover{
+        text-decoration: underline;
+        text-decoration-color: #000000;
+    }
+
+    #FooterDown span{
+        color: #0A0908;
+        font-size: 11pt;
+        font-family: cursive;
+    }
+}
+
+/*/////////////////////////////////////////////////////////
+ |Tableta| Estilos para pantallas entre 681px y 1024*/
+@media screen and (min-width: 681px) and (max-width: 1024px){
+    .PageContainer{
+        width: 700px;
+        margin: 0px auto;
+        overflow: auto;
+        background-color: #FEFEE3;
+    }
+
+    /*Sección de la barra top*/
+    .TopBar{
+        width: 100%;
+        height: 50px;
+        float: left;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #LeftContent{
+        display: flex;
+        align-items: center;
+    }
+
+    .LogoImg{
+        width: 125px;
+        height: 50px;
+    }
+
+    #RightContent{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #RightContent a:hover{
+        opacity: 0.7;
+    }
+
+    .LoginButton{
+        padding: 3px 5px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #22333B;
+        border-radius: 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        background-color: #FEFEE3;
+    }
+
+    .LoginButton span{
+        color: #22333B;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 11pt;
+    }
+
+    .SignUpButton{
+        padding: 3px 5px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #22333B;
+        border-radius: 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        background-color: #22333B;
+    }
+
+    .SignUpButton span{
+        color: #FEFEE3;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 11pt;
+    }
+
+    /*Sección de la imagen del encabezado*/
+    .HeaderImg{
+        width: 100%;
+        height: 205px;
+        float: left;
+    }
+
+    .HeaderImg img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Sección del menu*/
+    .MenuMobile{
+        display: none;
+    }
+
+    .Menu{
+        width: 100%;
+        height: 50px;
+        float: left;
+        overflow: auto;
+        background-color: #22333B;
+    }
+
+    .Menu a{
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .HomeButton{
+        width: 52px;
+    }
+
+    .HomeButton i{
+        color: #FEFEE3;
+    }
+
+    .MenuButton{
+        width: 162px;
+    }
+
+    .MenuButton span{
+        color: #FEFEE3;
+        font-family: cursive;
+        font-size: 10pt;
+    }
+
+    /*Sección del panel*/
+    .PanelContainer{
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 15px 0px;
+        background-color: #5E503F;
+    }
+
+    /*Sección del panel - Panel principal*/
+    #PrincipalPanel{
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .OperationPanelTitle{
+        text-align: center;
+        border-bottom: 1px dashed #FFFFFF;
+    }
+
+    .OperationPanelTitle span{
+        color: #FFFFFF;
+        font-size: 24pt;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    .OperationPanel{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .LabelOne{
+        color: #FFFFFF;
+        font-size: 15pt;
+        font-family: system-ui, sans-serif;
+    }
+
+    .LabelTwo{
+        color: #FEFEE3;
+        font-size: 9pt;
+        font-family: system-ui, sans-serif;
+    }
+
+    .LabelZero{
+        color: #22333B;
+        font-size: 17pt;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: underline #F03554;
+        font-family: system-ui, sans-serif;
+        background-color: #FEFEE3;
+    }
+
+    .TablePanel{
+        display: flex;
+        justify-content: center;
+    }
+
+    #DataTable{
+        border: 3px solid #FEFEE3;
+        border-collapse: collapse;
+        font-family: system-ui, sans-serif;
+        background-color: #22333B;
+    }
+
+    #DataTable tr td{
+        border: 2px solid #C6AC8F;
+        padding: 5px;
+        color: #FFFFFF;
+        font-size: 12pt;
+    }
+
+    #DataTable tr td a{
+        color: #70B77E;
+        font-size: 14pt;
+    }
+    
+    /*Sección del panel - Panel barra lateral*/
+    #SideBarPanel{
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .PanelMessage{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .TitleMessage{
+        border-bottom: 1px dashed #FFFFFF;
+    }
+
+    .TitleMessage span{
+        color: #FFFFFF;
+        font-size: 13.5pt;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .Message{
+        text-align: center;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: #FEFEE3;
+    }
+
+    .Message span{
+        color: #22333B;
+        font-size: 12.5pt;
+        font-weight: bold;
+        font-family: system-ui, sans-serif;
+    }
+
+    /*Sección del pie*/
+    .Footer{
+        width: 100%;
+        float: left;
+        overflow: auto;
+    }
+
+    .Footer div{
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #FooterUp{
+        height: 50px;
+        background-color: #C6AC8F;
+    }
+
+    #FooterUp span{
+        color: #0A0908;
+        font-size: 11pt;
+        font-family: cursive;
+    }
+
+    #FooterUp a{
+        text-decoration: underline #0A0908;
+    }
+
+    #FooterUp a:hover{text-decoration: none;}
+
+    #FooterDown{
+        height: 40px;
+        background-color: #EAE0D5;
+    }
+
+    #FooterDown a:hover{
+        text-decoration: underline;
+        text-decoration-color: #000000;
+    }
+
+    #FooterDown span{
+        color: #0A0908;
+        font-size: 10pt;
+        font-family: cursive;
+    }
+}
+
+/*///////////////////////////////////////////////////////
+ |Movil| Estilos para pantallas entre 0px y 680px*/
+@media screen and (min-width: 0px) and (max-width: 680px){
+    .PageContainer{
+        width: 100%;
+        margin: 0px auto;
+        overflow: auto;
+        background-color: #FEFEE3;
+    }
+
+    /*Sección de la barra top*/
+    .TopBar{
+        width: 100%;
+        height: 50px;
+        float: left;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #LeftContent{
+        display: flex;
+        align-items: center;
+    }
+
+    .LogoImg{
+        width: 125px;
+        height: 50px;
+    }
+
+    #RightContent{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #RightContent a:hover{
+        opacity: 0.7;
+    }
+
+    .LoginButton{
+        padding: 3px 5px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #22333B;
+        border-radius: 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        background-color: #FEFEE3;
+    }
+
+    .LoginButton span{
+        color: #22333B;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 11pt;
+    }
+
+    .SignUpButton{
+        padding: 3px 5px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #22333B;
+        border-radius: 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        background-color: #22333B;
+    }
+
+    .SignUpButton span{
+        color: #FEFEE3;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 11pt;
+    }
+
+    /*Sección de la imagen del encabezado*/
+    .HeaderImg{
+        width: 100%;
+        height: 199px;
+        float: left;
+    }
+
+    .HeaderImg img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Sección del menu*/
+    .Menu .MenuButton{
+        display: none;
+    }
+
+    .Menu{
+        width: 100%;
+        height: 50px;
+        float: left;
+        overflow: auto;
+        background-color: #22333B;
+    }
+
+    .HomeButton{
+        width: 10%;
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .HomeButton i{
+        color: #FEFEE3;
+    }
+    
+    .MenuMobile{
+        width: 90%;
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .MenuMobile label{
+        cursor: hand;
+        color: #FEFEE3;
+        margin-right: 20px;
+    }
+
+    #MenuSearchBar{
+        display: none;
+    }
+
+    .M_SearchBar{
+        position: absolute;
+        top: 299px; left: 0; right: 0;
+        margin: 0px;
+        padding: 0px;
+        overflow: auto;
+        display: none;
+    }
+
+    .M_SearchBar input{
+        width: 50%;
+        height: 30px;
+        margin: 0px;
+        padding: 0px 0px 0px 5px;
+        border: 0px;
+        border-left: 1px solid #22333B;
+        border-bottom: 1px solid #22333B;
+        float: right;
+        color: #22333B;
+        font-size: 10pt;
+        font-family: 'Poppins', sans-serif;
+        background-color: #EAE0D5;
+    }
+
+    ::placeholder{
+        color: #22333B;
+    }
+
+    #MenuSearchBar:checked ~ .M_SearchBar{
+        display: initial;
+    }
+
+    #MenuBar{
+        display: none;
+    }
+
+    .Buttons{
+        position: absolute;
+        top: 299px; left: 0; right: 0;
+        overflow: auto;
+        background-color: #EAE0D5;
+        display: none;
+    }
+
+    .Buttons a{
+        width: 100%;
+        height: 29px;
+        border-bottom: 1px solid #FEFEE3;
+        float: left;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .Buttons a i{
+        margin-left: 20px;
+        color: #22333B;
+    }
+
+    .Buttons a span{
+        color: #22333B;
+        font-family: cursive;
+        font-size: 12pt;
+    }
+
+    #MenuBar:checked ~ .Buttons{
+        display: initial;
+    }
+
+    /*Sección del panel*/
+    .PanelContainer{
+        width: 100%;
+        padding: 15px 0px;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background-color: #5E503F;
+    }
+
+    /*Sección del panel - Panel principal*/
+    #PrincipalPanel{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .OperationPanelTitle{
+        text-align: center;
+        border-bottom: 1px dashed #FFFFFF;
+    }
+
+    .OperationPanelTitle span{
+        color: #FFFFFF;
+        font-size: 24pt;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    .OperationPanel{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .LabelOne{
+        padding-left: 10px;
+        color: #FFFFFF;
+        font-size: 15pt;
+        font-family: system-ui, sans-serif;
+    }
+
+    .LabelTwo{
+        padding-left: 10px;
+        color: #FEFEE3;
+        font-size: 9pt;
+        font-family: system-ui, sans-serif;
+    }
+
+    .LabelZero{
+        color: #22333B;
+        font-size: 17pt;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: underline #F03554;
+        font-family: system-ui, sans-serif;
+        background-color: #FEFEE3;
+    }
+
+    .TablePanel{
+        display: flex;
+        justify-content: center;
+    }
+
+    #DataTable{
+        border: 3px solid #FEFEE3;
+        border-collapse: collapse;
+        font-family: system-ui, sans-serif;
+        background-color: #22333B;
+    }
+
+    #DataTable tr td{
+        border: 2px solid #C6AC8F;
+        padding: 5px;
+        color: #FFFFFF;
+        font-size: 12pt;
+    }
+
+    #DataTable tr td a{
+        color: #70B77E;
+        font-size: 14pt;
+    }
+    
+    /*Sección del panel - Panel barra lateral*/
+    #SideBarPanel{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .PanelMessage{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .TitleMessage{
+        border-bottom: 1px dashed #FFFFFF;
+    }
+
+    .TitleMessage span{
+        padding-left: 10px;
+        color: #FFFFFF;
+        font-size: 13.5pt;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .Message{
+        text-align: center;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: #FEFEE3;
+    }
+
+    .Message span{
+        color: #22333B;
+        font-size: 12.5pt;
+        font-weight: bold;
+        font-family: system-ui, sans-serif;
+    }
+
+    /*Sección del pie*/
+    .Footer{
+        width: 100%;
+        float: left;
+        overflow: auto;
+    }
+
+    .Footer div{
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #FooterUp{
+        height: 50px;
+        background-color: #C6AC8F;
+    }
+
+    #FooterUp span{
+        color: #0A0908;
+        font-size: 10.5pt;
+        font-family: cursive;
+    }
+
+    #FooterUp a{
+        text-decoration: underline #0A0908;
+    }
+
+    #FooterUp a:hover{text-decoration: none;}
+
+    #FooterDown{
+        height: 40px;
+        background-color: #EAE0D5;
+    }
+
+    #FooterDown a:hover{
+        text-decoration: underline;
+        text-decoration-color: #000000;
+    }
+
+    #FooterDown span{
+        color: #0A0908;
+        font-size: 9.5pt;
+        font-family: cursive;
+    }
+}

@@ -1,0 +1,1584 @@
+/*Configuración del body*/
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #EAE0D5;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* |Diseño para monitor| Resolución para pantallas de 1025px en adelante*/
+@media screen and (min-width: 1025px){
+    .PageContainer{
+        width: 960px;
+        margin: 0px auto;
+        overflow: auto;
+        background-color: #FEFEE3;
+    }
+
+    /*Sección de la barra top*/
+    .TopBar{
+        width: 100%;
+        height: 50px;
+        float: left;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #LeftContent{
+        display: flex;
+        align-items: center;
+    }
+
+    .LogoImg{
+        width: 150px;
+        height: 50px;
+    }
+
+    #RightContent{
+        width: 250px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #RightContent a:hover{
+        opacity: 0.7;
+    }
+
+    .LoginButton{
+        width: 96px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #22333B;
+        border-radius: 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        background-color: #FEFEE3;
+    }
+
+    .LoginButton span{
+        color: #22333B;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 13pt;
+        user-select: none;
+    }
+
+    .SignUpButton{
+        width: 96px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #22333B;
+        border-radius: 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        background-color: #22333B;
+    }
+
+    .SignUpButton span{
+        color: #FEFEE3;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 13pt;
+        user-select: none;
+    }
+
+    /*Sección de la imagen del encabezado*/
+    .HeaderImg{
+        width: 100%;
+        height: 281px;
+        float: left;
+    }
+
+    .HeaderImg img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Sección del menu*/
+    .MenuMobile{
+        display: none;
+    }
+
+    .Menu{
+        width: 100%;
+        height: 50px;
+        float: left;
+        overflow: auto;
+        background-color: #22333B;
+    }
+
+    .Menu a{
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .HomeButton{
+        width: 60px;
+    }
+
+    .HomeButton i{
+        color: #FEFEE3;
+    }
+
+    .MenuButton{
+        width: 225px;
+    }
+
+    .MenuButton span{
+        color: #FEFEE3;
+        font-family: cursive;
+        font-size: 13.5pt;
+        user-select: none;
+    }
+
+    /*Sección del contenido*/
+    .ContentContainer{
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 15px 0px;
+        background-color: #5E503F;
+    }
+
+    /*Sección del contenido - Contenido principal*/
+    #PrincipalContent{
+        width: 615px;
+        height: 945px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .FilterContainer{
+        width: 100%;
+        height: 40px;
+        border-radius: 3px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #FEFEE3;
+    }
+
+    .FilterText span{
+        color: #22333B;
+        font-size: 15pt;
+        font-weight: bold;
+        font-family: system-ui, sans-serif;
+    }
+
+    .FilterOptions label{
+        cursor: hand;
+        color: #22333B;
+        font-size: 12pt;
+        font-weight: bold;
+        font-family: system-ui, sans-serif;
+    }
+
+    .EvidenceContent{
+        width: 100%;
+        height: 270px;
+        border-bottom: 10px double #C6AC8F;
+        overflow: auto;
+    }
+
+    .EvidenceImg{
+        width: 230px;
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .EvidenceLink{
+        width: 95%;
+        height: 90%;
+    }
+
+    .EvidenceLink img{
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+    }
+
+    .EvidenceData{
+        width: 385px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .EvidenceTitle{
+        width: 100%;
+        height: 60px;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    .EvidenceTitle a span{
+        color: #FEFEE3;
+        font-size: 20pt;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .EvidenceTitle a:hover span{
+        text-decoration: underline;
+    }
+
+    .EvidenceDescription{
+        width: 100%;
+        height: 185px;
+        text-align: justify;
+        overflow-wrap: break-word;
+    }
+
+    .EvidenceDescription p{
+        margin: 0px;
+        color: #FEFEE3;
+        font-size: 13pt;
+        font-family: Arial, Helvetica, sans-serif;
+        word-wrap: break-word;
+    }
+
+    .NextPageButton{
+        width: 100%;
+        overflow: auto;
+    }
+
+    .NextPageButton a{
+        height: 25px;
+        float: right;
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        padding: 4px;
+        border: 2px solid #C6AC8F;
+        border-radius: 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        background-color: #5E503F;
+    }
+
+    .NextPageButton a span{
+        color: #FFFFFF;
+        font-size: 11pt;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .NextPageButton a:hover{
+        opacity: 0.7;
+    }
+
+    /*Sección del contenido - Contenido barra lateral*/
+    #SideBarContent{
+        width: 295px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .SearchBar{
+        width: 100%;
+        height: 40px;
+        overflow: auto;
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        border-radius: 3px;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .SearchBar input{
+        width: 80%;
+        height: 100%;
+        float: left;
+        margin: 0px;
+        padding: 0px 0px 0px 5px;
+        border: 0px;
+        color: #FEFEE3;
+        font-size: 12pt;
+        font-family: 'Poppins', sans-serif;
+        background-color: transparent;
+    }
+
+    ::placeholder{
+        color: #FEFEE3;
+    }
+
+    .SearchBar button{
+        width: 20%;
+        height: 100%;
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        background-color: #EAE0D5;
+        cursor: hand;
+    }
+
+    .UserPanel{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .PanelTitle{
+        width: 100%;
+        height: 24px;
+        border-bottom: 1px dashed #FFFFFF;
+    }
+
+    .PanelTitle span{
+        color: #FFFFFF;
+        font-size: 15pt;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    .PanelButtons{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+    }
+
+    .PanelButtons a{
+        width: 70%;
+        padding: 5px 0px;
+        text-align: center;
+        border-radius: 3px;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .PanelButtons a:hover{
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .PanelButtons a span{
+        color: #FEFEE3;
+        font-size: 13pt;
+        font-family: system-ui, sans-serif;
+    }
+
+    .PanelButtons a:hover span{
+        color: #22333B;
+        font-weight: bold;
+    }
+
+    .CommentsContainer{
+        width: 100%;
+        height: 420px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #C6AC8F;
+    }
+
+    .CommentsTitle{
+        width: 97%;
+        text-align: center;
+        border-radius: 3px;
+        background-color: #FEFEE3;
+    }
+
+    .CommentsTitle span{
+        color: #22333B;
+        font-weight: bold;
+        font-size: 17pt;
+        font-family: system-ui, sans-serif;
+        user-select: none;
+    }
+
+    .Comments{
+        width: 97%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .Comment{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Comment a{
+        width: 15%;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEFEE3;
+    }
+
+    .Comment a img{
+        width: 70%;
+        height: 65%;
+    }
+
+    .Comment div{
+        width: 84%;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEFEE3;
+    }
+
+    .Comment div span{
+        color: #22333B;
+        font-size: 10pt;
+        font-family: system-ui, sans-serif;
+        user-select: none;
+    }
+
+    .CommentsSubmit{
+        width: 97%;
+        height: 50px;
+        margin: 0px;
+        border-radius: 3px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .CommentUserIcon{
+        width: 20%;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEFEE3;
+    }
+
+    .CommentUserIcon img{
+        width: 80%;
+        height: 75%;
+    }
+
+    .CommentInput{
+        width: 79%;
+        margin: 0px;
+        overflow: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .CommentInput input{
+        width: 80%;
+        height: 80%;
+        border-radius: 3px;
+        -webkit-border-radius: 3px 0px 0px 3px;
+        margin: 0px;
+        padding: 0px 0px 0px 5px;
+        border: 0px;
+        float: left;
+        color: #22333B;
+        font-size: 10pt;
+        font-family: 'Poppins', sans-serif;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .CommentInput input::placeholder{color: #22333B;}
+
+    .CommentInput button{
+        width: 20%;
+        height: 80%;
+        border-radius: 3px;
+        -webkit-border-radius: 0px 3px 3px 0px;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        float: left;
+        cursor: hand;
+        background-color: #EAE0D5 0.5;
+    }
+    
+    /*Sección del pie*/
+    .Footer{
+        width: 100%;
+        float: left;
+        overflow: auto;
+    }
+
+    .Footer div{
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #FooterUp{
+        height: 50px;
+        background-color: #C6AC8F;
+    }
+
+    #FooterUp span{
+        color: #0A0908;
+        font-size: 12pt;
+        font-family: cursive;
+    }
+
+    #FooterUp a{
+        text-decoration: underline #0A0908;
+    }
+
+    #FooterUp a:hover{text-decoration: none;}
+
+    #FooterDown{
+        height: 40px;
+        background-color: #EAE0D5;
+    }
+
+    #FooterDown a:hover{
+        text-decoration: underline;
+        text-decoration-color: #000000;
+    }
+
+    #FooterDown span{
+        color: #0A0908;
+        font-size: 11pt;
+        font-family: cursive;
+    }
+}
+
+/*/////////////////////////////////////////////////////////
+ |Tableta| Estilos para pantallas entre 681px y 1024*/
+@media screen and (min-width: 681px) and (max-width: 1024px){
+    .PageContainer{
+        width: 700px;
+        margin: 0px auto;
+        overflow: auto;
+        background-color: #FEFEE3;
+    }
+
+    /*Sección de la barra top*/
+    .TopBar{
+        width: 100%;
+        height: 50px;
+        float: left;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #LeftContent{
+        display: flex;
+        align-items: center;
+    }
+
+    .LogoImg{
+        width: 125px;
+        height: 50px;
+    }
+
+    #RightContent{
+        width: 225px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #RightContent a:hover{
+        opacity: 0.7;
+    }
+
+    .LoginButton{
+        width: 96px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #22333B;
+        border-radius: 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        background-color: #FEFEE3;
+    }
+
+    .LoginButton span{
+        color: #22333B;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 11pt;
+    }
+
+    .SignUpButton{
+        width: 96px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #22333B;
+        border-radius: 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        background-color: #22333B;
+    }
+
+    .SignUpButton span{
+        color: #FEFEE3;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 11pt;
+    }
+
+    /*Sección de la imagen del encabezado*/
+    .HeaderImg{
+        width: 100%;
+        height: 205px;
+        float: left;
+    }
+
+    .HeaderImg img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Sección del menu*/
+    .MenuMobile{
+        display: none;
+    }
+
+    .Menu{
+        width: 100%;
+        height: 50px;
+        float: left;
+        overflow: auto;
+        background-color: #22333B;
+    }
+
+    .Menu a{
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .HomeButton{
+        width: 52px;
+    }
+
+    .HomeButton i{
+        color: #FEFEE3;
+    }
+
+    .MenuButton{
+        width: 162px;
+    }
+
+    .MenuButton span{
+        color: #FEFEE3;
+        font-family: cursive;
+        font-size: 10pt;
+    }
+
+    /*Sección del contenido*/
+    .ContentContainer{
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px 0px;
+        background-color: #5E503F;
+    }
+
+    /*Sección del contenido - Contenido principal*/
+    #PrincipalContent{
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .FilterContainer{
+        width: 100%;
+        height: 30px;
+        border-radius: 3px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #FEFEE3;
+    }
+
+    .FilterText{
+        width: 100px;
+        text-align: left;
+    }
+
+    .FilterText span{
+        color: #22333B;
+        font-size: 9pt;
+        font-weight: bold;
+        font-family: system-ui, sans-serif;
+    }
+
+    .FilterOptions label{
+        cursor: hand;
+        color: #22333B;
+        font-size: 9pt;
+        font-weight: bold;
+        font-family: system-ui, sans-serif;
+    }
+
+    .EvidenceContent{
+        width: 100%;
+        height: 280px;
+        border-bottom: 10px double #C6AC8F;
+        overflow: auto;
+    }
+
+    .EvidenceImg{
+        width: 100%;
+        height: 100px;
+        float: left;
+        display: flex;
+        justify-content: center;
+    }
+
+    .EvidenceLink{
+        width: 45%;
+        height: 100%;
+    }
+
+    .EvidenceLink img{
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+    }
+
+    .EvidenceData{
+        width: 100%;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .EvidenceTitle{
+        width: 100%;
+        height: 55px;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    .EvidenceTitle a span{
+        color: #FEFEE3;
+        font-size: 19pt;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .EvidenceTitle a:hover span{
+        text-decoration: underline;
+    }
+
+    .EvidenceDescription{
+        width: 100%;
+        height: 110px;
+        text-align: justify;
+        overflow-wrap: break-word;
+    }
+
+    .EvidenceDescription p{
+        margin: 0px;
+        color: #FEFEE3;
+        font-size: 12pt;
+        font-family: Arial, Helvetica, sans-serif;
+        word-wrap: break-word;
+    }
+
+    .NextPageButton{
+        width: 100%;
+        overflow: auto;
+    }
+
+    .NextPageButton a{
+        height: 25px;
+        float: right;
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        padding: 4px;
+        border: 2px solid #C6AC8F;
+        border-radius: 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        background-color: #5E503F;
+    }
+
+    .NextPageButton a span{
+        color: #FFFFFF;
+        font-size: 11pt;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .NextPageButton a:hover{
+        opacity: 0.7;
+    }
+
+    /*Sección del contenido - Contenido barra lateral*/
+    #SideBarContent{
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .SearchBar{
+        width: 100%;
+        height: 30px;
+        overflow: auto;
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        border-radius: 3px;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .SearchBar input{
+        width: 80%;
+        height: 100%;
+        float: left;
+        margin: 0px;
+        padding: 0px 0px 0px 5px;
+        border: 0px;
+        color: #FEFEE3;
+        font-size: 10pt;
+        font-family: 'Poppins', sans-serif;
+        background-color: transparent;
+    }
+
+    ::placeholder{
+        color: #FEFEE3;
+    }
+
+    .SearchBar button{
+        width: 20%;
+        height: 100%;
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        background-color: #EAE0D5;
+        cursor: hand;
+    }
+
+    .UserPanel{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .PanelTitle{
+        width: 100%;
+        height: 24px;
+        border-bottom: 1px dashed #FFFFFF;
+    }
+
+    .PanelTitle span{
+        color: #FFFFFF;
+        font-size: 14pt;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    .PanelButtons{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+    }
+
+    .PanelButtons a{
+        width: 70%;
+        padding: 5px 0px;
+        text-align: center;
+        border-radius: 3px;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .PanelButtons a:hover{
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .PanelButtons a span{
+        color: #FEFEE3;
+        font-size: 12pt;
+        font-family: system-ui, sans-serif;
+    }
+
+    .PanelButtons a:hover span{
+        color: #22333B;
+        font-weight: bold;
+    }
+
+    .CommentsContainer{
+        width: 100%;
+        height: 420px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #C6AC8F;
+    }
+
+    .CommentsTitle{
+        width: 97%;
+        text-align: center;
+        border-radius: 3px;
+        background-color: #FEFEE3;
+    }
+
+    .CommentsTitle span{
+        color: #22333B;
+        font-weight: bold;
+        font-size: 17pt;
+        font-family: system-ui, sans-serif;
+        user-select: none;
+    }
+
+    .Comments{
+        width: 97%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .Comment{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Comment a{
+        width: 15%;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEFEE3;
+    }
+
+    .Comment a img{
+        width: 65%;
+        height: 60%;
+    }
+
+    .Comment div{
+        width: 84%;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEFEE3;
+    }
+
+    .Comment div span{
+        color: #22333B;
+        font-size: 10pt;
+        font-family: system-ui, sans-serif;
+        user-select: none;
+    }
+
+    .CommentsSubmit{
+        width: 97%;
+        height: 50px;
+        margin: 0px;
+        border-radius: 3px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .CommentUserIcon{
+        width: 20%;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEFEE3;
+    }
+
+    .CommentUserIcon img{
+        width: 80%;
+        height: 75%;
+    }
+
+    .CommentInput{
+        width: 79%;
+        margin: 0px;
+        overflow: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .CommentInput input{
+        width: 80%;
+        height: 80%;
+        border-radius: 3px;
+        -webkit-border-radius: 3px 0px 0px 3px;
+        margin: 0px;
+        padding: 0px 0px 0px 5px;
+        border: 0px;
+        float: left;
+        color: #22333B;
+        font-size: 10pt;
+        font-family: 'Poppins', sans-serif;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .CommentInput input::placeholder{color: #22333B;}
+
+    .CommentInput button{
+        width: 20%;
+        height: 80%;
+        border-radius: 3px;
+        -webkit-border-radius: 0px 3px 3px 0px;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        float: left;
+        cursor: hand;
+        background-color: #EAE0D5 0.5;
+    }
+
+    /*Sección del pie*/
+    .Footer{
+        width: 100%;
+        float: left;
+        overflow: auto;
+    }
+
+    .Footer div{
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #FooterUp{
+        height: 50px;
+        background-color: #C6AC8F;
+    }
+
+    #FooterUp span{
+        color: #0A0908;
+        font-size: 11pt;
+        font-family: cursive;
+    }
+
+    #FooterUp a{
+        text-decoration: underline #0A0908;
+    }
+
+    #FooterUp a:hover{text-decoration: none;}
+
+    #FooterDown{
+        height: 40px;
+        background-color: #EAE0D5;
+    }
+
+    #FooterDown a:hover{
+        text-decoration: underline;
+        text-decoration-color: #000000;
+    }
+
+    #FooterDown span{
+        color: #0A0908;
+        font-size: 10pt;
+        font-family: cursive;
+    }
+}
+
+/*///////////////////////////////////////////////////////
+ |Movil| Estilos para pantallas entre 0px y 680px*/
+@media screen and (min-width: 0px) and (max-width: 680px){
+    .PageContainer{
+        width: 100%;
+        margin: 0px auto;
+        overflow: auto;
+        background-color: #FEFEE3;
+    }
+
+    /*Sección de la barra top*/
+    .TopBar{
+        width: 100%;
+        height: 50px;
+        float: left;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #LeftContent{
+        display: flex;
+        align-items: center;
+    }
+
+    .LogoImg{
+        width: 125px;
+        height: 50px;
+    }
+
+    #RightContent{
+        width: 225px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #RightContent a:hover{
+        opacity: 0.7;
+    }
+
+    .LoginButton{
+        width: 96px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #22333B;
+        border-radius: 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        background-color: #FEFEE3;
+    }
+
+    .LoginButton span{
+        color: #22333B;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 11pt;
+    }
+
+    .SignUpButton{
+        width: 96px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #22333B;
+        border-radius: 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        background-color: #22333B;
+    }
+
+    .SignUpButton span{
+        color: #FEFEE3;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 11pt;
+    }
+
+    /*Sección de la imagen del encabezado*/
+    .HeaderImg{
+        width: 100%;
+        height: 199px;
+        float: left;
+    }
+
+    .HeaderImg img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Sección del menu*/
+    .Menu .MenuButton{
+        display: none;
+    }
+
+    .Menu{
+        width: 100%;
+        height: 50px;
+        float: left;
+        overflow: auto;
+        background-color: #22333B;
+    }
+
+    .HomeButton{
+        width: 10%;
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .HomeButton i{
+        color: #FEFEE3;
+    }
+    
+    .MenuMobile{
+        width: 90%;
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .MenuMobile label{
+        cursor: hand;
+        color: #FEFEE3;
+        margin-right: 20px;
+    }
+
+    #MenuSearchBar{
+        display: none;
+    }
+
+    .M_SearchBar{
+        position: absolute;
+        top: 299px; left: 0; right: 0;
+        margin: 0px;
+        padding: 0px;
+        overflow: auto;
+        display: none;
+    }
+
+    .M_SearchBar input{
+        width: 50%;
+        height: 30px;
+        margin: 0px;
+        padding: 0px 0px 0px 5px;
+        border: 0px;
+        border-left: 1px solid #22333B;
+        border-bottom: 1px solid #22333B;
+        float: right;
+        color: #22333B;
+        font-size: 10pt;
+        font-family: 'Poppins', sans-serif;
+        background-color: #EAE0D5;
+    }
+
+    ::placeholder{
+        color: #22333B;
+    }
+
+    #MenuSearchBar:checked ~ .M_SearchBar{
+        display: initial;
+    }
+
+    #MenuBar{
+        display: none;
+    }
+
+    .Buttons{
+        position: absolute;
+        top: 299px; left: 0; right: 0;
+        overflow: auto;
+        background-color: #EAE0D5;
+        display: none;
+    }
+
+    .Buttons a{
+        width: 100%;
+        height: 29px;
+        border-bottom: 1px solid #FEFEE3;
+        float: left;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .Buttons a i{
+        margin-left: 20px;
+        color: #22333B;
+    }
+
+    .Buttons a span{
+        color: #22333B;
+        font-family: cursive;
+        font-size: 12pt;
+    }
+
+    #MenuBar:checked ~ .Buttons{
+        display: initial;
+    }
+
+    /*Sección del contenido*/
+    .ContentContainer{
+        width: 100%;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 10px 0px;
+        background-color: #5E503F;
+    }
+
+    /*Sección del contenido - Contenido principal*/
+    #PrincipalContent{
+        width: 100%;
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .FilterContainer{
+        width: 100%;
+        height: 40px;
+        border-radius: 3px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #FEFEE3;
+    }
+
+    .FilterText span{
+        color: #22333B;
+        font-size: 13pt;
+        font-weight: bold;
+        font-family: system-ui, sans-serif;
+    }
+
+    .FilterOptions label{
+        cursor: hand;
+        color: #22333B;
+        font-size: 11pt;
+        font-weight: bold;
+        font-family: system-ui, sans-serif;
+    }
+
+    .EvidenceContent{
+        width: 100%;
+        border-bottom: 10px double #C6AC8F;
+        overflow: auto;
+    }
+
+    .EvidenceImg{
+        width: 100%;
+        height: 100px;
+        float: left;
+        display: flex;
+        justify-content: center;
+    }
+
+    .EvidenceLink{
+        width: 25%;
+        height: 100%;
+    }
+
+    .EvidenceLink img{
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+    }
+
+    .EvidenceData{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .EvidenceTitle{
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    .EvidenceTitle a span{
+        color: #FEFEE3;
+        font-size: 18pt;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .EvidenceTitle a:hover span{
+        text-decoration: underline;
+    }
+
+    .EvidenceDescription{
+        width: 100%;
+        height: 85px;
+        text-align: justify;
+        overflow-wrap: break-word;
+    }
+
+    .EvidenceDescription p{
+        margin: 0px;
+        color: #FEFEE3;
+        font-size: 11pt;
+        font-family: Arial, Helvetica, sans-serif;
+        word-wrap: break-word;
+    }
+
+    .NextPageButton{
+        width: 100%;
+        overflow: auto;
+    }
+
+    .NextPageButton a{
+        height: 25px;
+        float: right;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        margin-right: 3%;
+        padding: 4px;
+        border: 2px solid #C6AC8F;
+        border-radius: 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        background-color: #5E503F;
+    }
+
+    .NextPageButton a span{
+        color: #FFFFFF;
+        font-size: 11pt;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .NextPageButton a:hover{
+        opacity: 0.7;
+    }
+
+    /*Sección del contenido - Contenido barra baja*/
+    #SideBarContent{
+        width: 100%;
+    }
+
+    .SearchBar{
+        display: none;
+    }
+
+    .UserPanel{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .PanelTitle{
+        width: 100%;
+        height: 24px;
+        padding-left: 5px;
+        border-bottom: 1px dashed #FFFFFF;
+    }
+
+    .PanelTitle span{
+        color: #FFFFFF;
+        font-size: 14pt;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    .PanelButtons{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+    }
+
+    .PanelButtons a{
+        width: 50%;
+        padding: 5px 0px;
+        text-align: center;
+        border-radius: 3px;
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .PanelButtons a:hover{
+        backdrop-filter: blur(4px) saturate(100%);
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .PanelButtons a span{
+        color: #FEFEE3;
+        font-size: 12pt;
+        font-family: system-ui, sans-serif;
+    }
+
+    .PanelButtons a:hover span{
+        color: #22333B;
+        font-weight: bold;
+    }
+
+    .CommentsContainer{
+        display: none;
+    }
+
+    /*Sección del pie*/
+    .Footer{
+        width: 100%;
+        float: left;
+        overflow: auto;
+    }
+
+    .Footer div{
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #FooterUp{
+        height: 50px;
+        background-color: #C6AC8F;
+    }
+
+    #FooterUp span{
+        color: #0A0908;
+        font-size: 10.5pt;
+        font-family: cursive;
+    }
+
+    #FooterUp a{
+        text-decoration: underline #0A0908;
+    }
+
+    #FooterUp a:hover{text-decoration: none;}
+
+    #FooterDown{
+        height: 40px;
+        background-color: #EAE0D5;
+    }
+
+    #FooterDown a:hover{
+        text-decoration: underline;
+        text-decoration-color: #000000;
+    }
+
+    #FooterDown span{
+        color: #0A0908;
+        font-size: 9.5pt;
+        font-family: cursive;
+    }
+}
